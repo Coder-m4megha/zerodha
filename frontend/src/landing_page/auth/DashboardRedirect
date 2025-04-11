@@ -1,0 +1,25 @@
+// frontend/src/landing_page/auth/DashboardRedirect.js
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+const DashboardRedirect = () => {
+  const location = useLocation();
+  
+  useEffect(() => {
+    // Get the current path and redirect to the dashboard app
+    const dashboardPath = location.pathname;
+    window.location.href = `http://localhost:3000${dashboardPath}`;
+  }, [location]);
+
+  return (
+    <div className="container mt-5 text-center">
+      <h2>Redirecting to Login Page...</h2>
+      <p>Please wait while we redirect you to the dashboard.</p>
+      <div className="spinner-border" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  );
+};
+
+export default DashboardRedirect;
