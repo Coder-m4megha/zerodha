@@ -1,4 +1,8 @@
 {
+  "engines": {
+    "node": "22.14.0"
+  },
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "client",
   "version": "0.1.0",
   "private": true,

@@ -3,10 +3,3 @@
 
 **/.env
 
-
-*.log
-logs/
-
-
-**/dist/
-**/build/
